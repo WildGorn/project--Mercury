@@ -22,7 +22,7 @@ Route::controllers([
 Route::get('/', ['as' => 'article', 'uses' => 'ArticlesController@index']);
 
 Route::get('/{slug}', ['as' => 'articles.article', 'uses' => 'ArticlesController@article']);
-Route::post('/{slug}/{article_id}', ['as' => 'comment.store', 'uses' => 'CommentController@store']);
+Route::post('/{slug}', ['as' => 'comment.store', 'uses' => 'CommentController@store']);
 
 //Route::any('comment', ['as' => 'comment.store', 'uses' => 'CommentController@store']);
 
